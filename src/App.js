@@ -7,12 +7,10 @@ import PreviewPage from './pages/PreviewPage.js'
 export const App = () => {
   return (
     <>
-      <Link href="/edit">
-        <a className="link">edit</a>
-      </Link>
       <Route path="/" component={HomePage} />
-      <Route path="/edit" component={EditPage} />
-      <Route path="/preview" component={PreviewPage} />
+      <Route path="/new" component={PreviewPage} />
+      <Route path="/edit:idProfile" component={EditPage} />
+      <Route path="/preview:idProfile" component={PreviewPage} />
     </>
   )
 }

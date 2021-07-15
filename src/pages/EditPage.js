@@ -1,3 +1,3 @@
 export default () => {
-  return (<h1>Edit</h1>)
+  return (<h1>EditPage ...</h1>)
 }

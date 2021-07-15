@@ -1,3 +1,3 @@
 export default () => {
-  return (<h1>Preview</h1>)
+  return (<h1>PreviewPage ...</h1>)
 }
