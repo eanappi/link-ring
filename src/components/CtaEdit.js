@@ -7,7 +7,7 @@ export const CtaEdit = () => {
             Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.
           </p>
         </div>
-        <div className="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
+        <div className="flex lg:w-2/3 w-full sm:flex-row flex-col justify-center mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-center">
           <div className="relative flex-grow w-full">
             <input type="email" id="email" name="email" className="w-full bg-custom-01 bg-opacity-50 rounded-md border-2 border-custom-01 focus:border-gray-200 focus:ring-2 focus:ring-gray-200 text-base outline-none text-custom-01 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
           </div>
