@@ -1,4 +1,4 @@
-export const Hero = () => {
+export const Hero = ({location}) => {
   return (
     <section className="bg-custom-01 body-font">
       <div className="container px-5 py-10 mx-auto">
@@ -10,7 +10,7 @@ export const Hero = () => {
             gentrify, subway tile poke farm-to-table.</p>
         </div>
 
-        <button className="flex mx-auto font-semibold text-custom-02 bg-custom-02 border-custom-01 border-2 py-2 px-8 rounded-md text-lg hover:bg-transparent hover:text-gray-900">
+        <button onClick={() => location('/new')} className="flex mx-auto font-semibold text-custom-02 bg-custom-02 border-custom-01 border-2 py-2 px-8 rounded-md text-lg hover:bg-transparent hover:text-gray-900">
           Get started
         </button>
       </div>

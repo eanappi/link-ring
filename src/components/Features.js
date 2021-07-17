@@ -1,6 +1,7 @@
+
 import IconCheckSquare from '../assets/check-square-features.svg'
 
-export const Features = () => {
+export const Features = ({location}) => {
   return (
     <section className="text-custom-01 body-font">
       <div className="container px-5 py-24 mx-auto">
@@ -46,7 +47,7 @@ export const Features = () => {
             </div>
           </div>
         </div>
-        <button className="flex mx-auto mt-16 font-semibold text-custom-02 bg-custom-02 border-custom-01 border-2 py-2 px-8 rounded-md text-lg hover:bg-transparent hover:text-gray-900">Start Now</button>
+        <button onClick={() => location('/new')} className="flex mx-auto mt-16 font-semibold text-custom-02 bg-custom-02 border-custom-01 border-2 py-2 px-8 rounded-md text-lg hover:bg-transparent hover:text-gray-900">Start Now</button>
       </div>
     </section>
   )

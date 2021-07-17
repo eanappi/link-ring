@@ -1,6 +1,6 @@
 import Logo from '../assets/logo.svg'
 
-export const NavBar = () => {
+export const NavBar = ({location}) => {
   return (
     <header className="bg-custom-01 body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -16,7 +16,7 @@ export const NavBar = () => {
             <a className="mr-5 hover:text-gray-900">Fourth Link</a>
           */}
         </nav>
-        <button className="inline-flex items-center font-semibold border-2 border-custom-01 py-1 px-3 rounded-md text-gray-900 text-base mt-4 md:mt-0 hover:bg-gray-800 hover:text-gray-200 hover:border-transparent">
+        <button onClick={() => location('/new')} className="inline-flex items-center font-semibold border-2 border-custom-01 py-1 px-3 rounded-md text-gray-900 text-base mt-4 md:mt-0 hover:bg-gray-800 hover:text-gray-200 hover:border-transparent">
           Make your page
         </button>
       </div>
