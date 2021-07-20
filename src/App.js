@@ -1,9 +1,9 @@
 import { Route, Link } from "wouter"
 
-import HomePage from './pages/HomePage.js'
-import NewPage from './pages/NewPage.js'
-import EditPage from './pages/EditPage.js'
-import PreviewPage from './pages/PreviewPage.js'
+import HomePage from './pages/HomePage'
+import NewPage from './pages/NewPage'
+import EditPage from './pages/EditPage'
+import PreviewPage from './pages/PreviewPage'
 
 export const App = () => {
   return (

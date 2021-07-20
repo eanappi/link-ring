@@ -9,16 +9,22 @@ export const NavBar = ({location}) => {
           <span className="ml-3 text-xl">Link Ring</span>
         </a>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 flex flex-wrap items-center text-base justify-center">
-          {/*
+          {
+            /*
             <a className="mr-5 hover:text-gray-900">First Link</a>
             <a className="mr-5 hover:text-gray-900">Second Link</a>
             <a className="mr-5 hover:text-gray-900">Third Link</a>
             <a className="mr-5 hover:text-gray-900">Fourth Link</a>
-          */}
+            */
+          }
         </nav>
-        <button onClick={() => location('/new')} className="inline-flex items-center font-semibold border-2 border-custom-01 py-1 px-3 rounded-md text-gray-900 text-base mt-4 md:mt-0 hover:bg-gray-800 hover:text-gray-200 hover:border-transparent">
-          Make your page
-        </button>
+        {
+          location ? (
+            <button onClick={() => location('/new')} className="inline-flex items-center font-semibold border-2 border-custom-01 py-1 px-3 rounded-md text-gray-900 text-base mt-4 md:mt-0 hover:bg-gray-800 hover:text-gray-200 hover:border-transparent">
+              Make your page
+            </button>
+          ) : null
+        }
       </div>
     </header>
   )
