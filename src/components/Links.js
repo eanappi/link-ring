@@ -1,7 +1,10 @@
 import checkImage from '../assets/check-box-fill.svg'
 import deleteImage from '../assets/delete-icon.svg'
+import { useLocation } from "wouter"
 
 export const Links = ({links, changeLinks}) => {
+  const [location, setLocation] = useLocation()
+
   return (
     <>
     {
@@ -20,10 +23,14 @@ export const Links = ({links, changeLinks}) => {
               </p> 
             </div>
           </div> 
-
-          <button onClick={() => changeLinks(link?.id)} className="flex items-center justify-center w-12 bg-red-500 hover:bg-red-200"> 
-            <img src={deleteImage} alt="title" className="w-6 h-6" /> 
-          </button>
+          
+          {
+          (location == '/new') ? (
+            <button onClick={() => changeLinks(link?.id)} className="flex items-center justify-center w-12 bg-red-500 hover:bg-red-200"> 
+              <img src={deleteImage} alt="title" className="w-6 h-6" /> 
+            </button>
+          ) : null
+          }
         </div> 
       ))
     }
