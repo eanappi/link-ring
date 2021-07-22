@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Links } from './Links'
 import { v4 as uuidv4 } from 'uuid'
 
-export const FormLink = () => {
+export const FormLink = ({hashlinks}) => {
   const [links, setLinks] = useState([])
   
   const handleLink = (evt) => {
@@ -20,6 +20,8 @@ export const FormLink = () => {
     })
   }
   
+  useEffect(() => hashlinks(links), [links])
+
   const changeLinks = (linkId) => {
     setLinks(links.filter(({id}) => id !== linkId))
   }

@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { ShowProfile } from './ShowProfile'
 
-export const Profile = () => {
+export const Profile = ({hashprofile}) => {
   const [profile, setProfile] = useState({})
 
   const handleAddProfile = (evt) => {
@@ -16,6 +16,8 @@ export const Profile = () => {
     setProfile({thumbnail, title, nickname, description})
   }
   
+  useEffect(() => hashprofile(profile), [profile])
+
   return (
     <>
       <section className="my-10 max-w-4xl p-6 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
