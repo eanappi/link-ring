@@ -1,3 +1,3 @@
 export const useLocationHash = () => {
-  return window.location.hash.replace(/^#/, "") || false
+  return window.location.hash.replace(/^#\//, "") || false
 };

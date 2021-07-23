@@ -1,4 +1,4 @@
-export const ShowProfile = ({profile}) => {
+export const ShowProfile = ({profile={}}) => {
   const handleErrorImgDefault = (evt) => {
     evt.target.src = 'default-image.svg'
   }

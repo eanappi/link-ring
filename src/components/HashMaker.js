@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react'
 
-export const HashMaker = ({hashurl, generate}) => {
+export const HashMaker = ({hashurl='', generate}) => {
   const inputUrl = useRef('')
 
   useEffect(() => {

@@ -6,11 +6,16 @@ import { Hero } from '../components/Hero'
 import { CtaEdit } from '../components/CtaEdit'
 import { Features } from '../components/Features'
 import { Footer } from '../components/Footer'
+import { Preview } from '../components/Preview'
 
 export default () => {
   const [location, setLocation] = useLocation()
-  
-  if (useLocationHash()) return <ShowProfile />
+
+  if (useLocationHash()) {
+    const hash = useLocationHash()
+    
+    return <Preview hash={hash} />
+  }
   
   return (
   <>
